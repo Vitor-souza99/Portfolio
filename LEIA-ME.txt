@@ -1,0 +1,30 @@
+PORTFÓLIO — VITOR LISBOA SOUZA
+
+Aplicativo migrado para Next.js, React, TypeScript, JavaScript e Tailwind CSS.
+
+REQUISITOS
+Node.js compatível com Next.js 16.
+
+INSTALAÇÃO E DESENVOLVIMENTO
+1. Execute npm install.
+2. Execute npm run dev.
+3. Acesse http://localhost:3000.
+
+VALIDAR E PUBLICAR
+npm run lint       Verifica o código com ESLint.
+npx tsc --noEmit   Verifica os tipos TypeScript.
+npm run build      Gera a versão de produção.
+npm start          Inicia o servidor de produção após o build.
+
+ESTRUTURA
+app/: página inicial, layout, metadados e estilos globais.
+components/portfolio.tsx: interação do menu, animações e formulário.
+index.html: conteúdo HTML original, aproveitado na página migrada.
+styles.css: estilos originais preservados, incluindo responsividade.
+app/globals.css: integra Tailwind CSS aos estilos existentes.
+assets/: imagens e currículo PDF.
+og.png: imagem de compartilhamento.
+
+O formulário abre o aplicativo de e-mail; não inclui servidor de envio.
+A fonte Manrope é carregada do Google Fonts quando há internet; Arial é a alternativa local.
+O site estático original continua disponível abrindo index.html; a versão Next.js usa npm run dev.
