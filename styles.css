@@ -209,14 +209,28 @@ nav a.active:after {
   display: none;
 }
 .language-picker select {
-  min-height: 40px;
-  padding: 0 10px;
-  border: 1px solid var(--border);
-  border-radius: 7px;
+  min-height: 32px;
+  padding: 0 7px;
+  border: 0;
+  border-radius: 5px;
   background: var(--panel);
   color: var(--white);
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   font-weight: 700;
+}
+.language-control {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+.language-control .language-picker select {
+  min-width: 54px;
+  background: transparent;
+  color: #a6afc7;
+  border: 1px solid var(--cyan);
+}
+.language-control .language-picker select:hover {
+  color: var(--cyan);
 }
 .visually-hidden {
   position: absolute;

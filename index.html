@@ -69,13 +69,6 @@
           <a href="#formacao" data-section="formacao">Formação</a>
           <a href="#contato" data-section="contato">Contato</a>
         </nav>
-        <label class="language-picker">
-          <span class="visually-hidden">Idioma / Language</span>
-          <select id="language-select" aria-label="Selecionar idioma / Select language">
-            <option value="pt">PT</option>
-            <option value="en">EN</option>
-          </select>
-        </label>
         <a class="button cv" href="assets/curriculo-vitor-souza.pdf" download>
           <svg
             viewBox="0 0 24 24"
@@ -105,6 +98,14 @@
     <main id="main">
       <section class="hero container" id="inicio">
         <div class="hero-copy">
+          <div class="language-control">
+            <label class="language-picker">
+              <select id="language-select" aria-label="PT / EN">
+                <option value="pt">PT</option>
+                <option value="en">EN</option>
+              </select>
+            </label>
+          </div>
           <div class="eyebrow">
             <span class="line"></span>
             TECNOLOGIA COM PROPÓSITO
@@ -143,7 +144,7 @@
                 <path d="m3 6 9 7 9-7" />
               </svg>
               Falar comigo
-            </a>
+          </a>
           </div>
           <div class="socials">
             <a
@@ -1161,7 +1162,8 @@
               />
             </svg>
             <span>Behance</span>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

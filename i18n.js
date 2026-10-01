@@ -103,8 +103,7 @@ function applyLanguage(language) {
   $('#navigation').querySelectorAll('a').forEach((node, i) => setText(node, t.nav[i]));
   setText($('.cv span'), t.download);
   $('.menu-toggle').setAttribute('aria-label', $('.menu-toggle').getAttribute('aria-expanded') === 'true' ? (lang === 'en' ? 'Close menu' : 'Fechar menu') : t.menu);
-  $('.language-picker .visually-hidden').textContent = t.language;
-  languageSelect.setAttribute('aria-label', t.language);
+  languageSelect.setAttribute('aria-label', 'PT / EN');
   setText($('.hero-copy > .eyebrow'), t.tech);
   setText($('.hello'), t.hello);
   setText($('.hero-role-primary'), t.role);
