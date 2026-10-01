@@ -3,16 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>
-      Vitor Lisboa Souza | Desenvolvedor de Software, UX/UI &amp; Dados
-    </title>
+    <title data-i18n-title>Vitor Lisboa Souza | Desenvolvedor de Software, UX/UI &amp; Dados</title>
     <meta
       name="description"
       content="Portfólio de Vitor Lisboa Souza, desenvolvedor de software com atuação em produtos digitais, desenvolvimento web, UX/UI, dados e Business Intelligence."
+      data-i18n-description
     />
     <meta name="theme-color" content="#070b19" />
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale" content="pt_BR" data-i18n-locale />
     <meta
       property="og:title"
       content="Vitor Lisboa Souza | Desenvolvimento, UX/UI & Dados"
@@ -49,6 +48,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="config.js" defer></script>
     <script src="app.js" defer></script>
+    <script src="i18n.js" defer></script>
   </head>
   <body>
     <a class="skip" href="#main">Pular para o conteúdo</a>
@@ -69,6 +69,13 @@
           <a href="#formacao" data-section="formacao">Formação</a>
           <a href="#contato" data-section="contato">Contato</a>
         </nav>
+        <label class="language-picker">
+          <span class="visually-hidden">Idioma / Language</span>
+          <select id="language-select" aria-label="Selecionar idioma / Select language">
+            <option value="pt">PT</option>
+            <option value="en">EN</option>
+          </select>
+        </label>
         <a class="button cv" href="assets/curriculo-vitor-souza.pdf" download>
           <svg
             viewBox="0 0 24 24"
@@ -111,7 +118,7 @@
             <span class="hero-role-support">UX/UI <span aria-hidden="true">|</span> Dados &amp; Produtos Digitais</span>
           </h2>
           <p class="hero-description">
-            Tecnólogo em Análise e Desenvolvimento de Sistemas, com experiência
+            Graduado em Análise e Desenvolvimento de Sistemas, com experiência
             em desenvolvimento web, UX/UI, análise de dados, Power BI, SQL e
             WordPress. Desenvolvo soluções que conectam tecnologia,
             experiência do usuário e visão de produto.
@@ -833,7 +840,7 @@
                 <br />
                 de Sistemas
               </h3>
-              <p>Tecnólogo · FATEC Americana — SP</p>
+              <p> · FATEC Americana — SP</p>
               <span class="muted">08/2020 — 09/2024</span>
               <div class="languages">
                 <span>

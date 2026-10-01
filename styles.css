@@ -208,6 +208,27 @@ nav a.active:after {
 .menu-toggle {
   display: none;
 }
+.language-picker select {
+  min-height: 40px;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--panel);
+  color: var(--white);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 .hero {
   min-height: 700px;
   padding-block: 80px 75px;
