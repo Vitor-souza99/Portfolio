@@ -10,6 +10,10 @@
 .hero h1{white-space:nowrap}
 .hero-role-primary{display:block;color:var(--white);font-weight:750}
 .hero-role-support{display:block;margin-top:3px;color:var(--muted);font-size:.78em;font-weight:500}
+.floating-top{position:fixed;right:26px;bottom:26px;z-index:30;display:grid;width:50px;height:50px;place-items:center;border:1px solid #ffffff35;border-radius:50%;background:var(--gradient);color:#070b19;box-shadow:0 8px 28px #0006;transition:transform .2s,box-shadow .2s}
+.floating-top:hover{transform:translateY(-4px);box-shadow:0 12px 32px #3c7df655}
+.floating-top svg{width:23px;height:23px}
+.floating-top:focus-visible{outline-offset:4px}
 .project-visual.visual-1{padding:18px;overflow:hidden}
 .project-visual.visual-1 img{width:100%;height:100%;min-height:300px;object-fit:cover;object-position:center;border-radius:10px}
 html,body{max-width:100%;overflow-x:clip}
@@ -17,3 +21,5 @@ html,body{max-width:100%;overflow-x:clip}
 .visual-2 img{aspect-ratio:auto;background:#f7f4ff}
 @media(max-width:760px){.header .brand>span:last-child{max-width:128px;white-space:normal;line-height:1.3;font-size:.8125rem}.header .brand{gap:9px}.header-inner{gap:10px}}
 @media(max-width:370px){.header .brand>span:last-child{max-width:100px;font-size:.75rem}.header .monogram{font-size:1.4rem}}
+@media(max-width:760px){.floating-top{right:18px;bottom:18px;width:46px;height:46px}}
+@media(prefers-reduced-motion:reduce){.floating-top{transition:none}}
